@@ -1,114 +1,167 @@
 # ShipPilot for WooCommerce
 
-ShipPilot for WooCommerce is a shipping management plugin for WooCommerce that helps merchants create shipments, generate shipping labels, retrieve tracking information, and automate shipping workflows directly from the WordPress administration panel.
+ShipPilot for WooCommerce is an independent shipping integration plugin that enables WooCommerce merchants to create shipments, generate shipping labels, synchronize tracking information and automate shipping workflows directly from the WordPress administration panel.
+
+---
 
 ## Features
 
-- Shipment creation
-- Shipping label generation
-- Tracking number management
-- Shipment status synchronization
-- Configurable shipping settings
-- Secure API communication
-- Translation ready
-- WordPress coding standards
-- Extensible developer architecture
+* Shipment creation
+* Shipping label generation
+* Shipment tracking synchronization
+* Reference and shipment barcode support
+* A4 / A5 shipping label printing
+* ZPL label download
+* WooCommerce customer notification emails
+* WooCommerce HPOS compatible
+* Translation ready
+* Secure API communication
+* Extensible developer architecture
+
+---
 
 ## Requirements
 
-* WordPress 6.5 or higher
-* WooCommerce 9.0 or higher
-* PHP 8.0 or higher
+* WordPress 6.0 or higher
+* WooCommerce 7.0 or higher
+* PHP 7.4 or higher
+
+---
 
 ## Installation
 
 1. Download the latest release.
-2. Upload the `shippilot-for-woocommerce` folder to the `/wp-content/plugins/` directory.
+2. Upload the `shippilot-for-woocommerce` folder to `/wp-content/plugins/`.
 3. Activate the plugin from **Plugins → Installed Plugins**.
-4. Open **WooCommerce → ShipPilot**.
-5. Configure your shipping provider credentials in the plugin settings.
-6. Save the settings and test the connection.
+4. Open **ShipPilot** from the WordPress administration menu.
+5. Configure your shipping provider API credentials.
+6. Test the API connection.
+7. Save your settings.
+
+---
 
 ## Configuration
 
 The plugin provides configuration options for:
 
 * API credentials
-* Shipping provider settings
-* Default shipment options
+* Shipping provider configuration
+* Default shipment settings
 * Tracking preferences
 * Order automation
+* Shipping label settings
+
+---
 
 ## External Services
 
-This plugin communicates with third-party shipping provider APIs in order to:
+ShipPilot communicates with supported shipping provider APIs only when the merchant initiates a shipping operation.
+
+### Purpose
 
 * Create shipments
 * Generate shipping labels
-* Retrieve shipment status
-* Obtain tracking information
+* Retrieve shipment tracking information
+* Synchronize shipment status
 
-The plugin only transmits the information required to perform shipping operations.
+### Data transmitted
 
-This plugin communicates with third-party shipping provider APIs to create shipments, generate shipping labels, and retrieve shipment tracking information.
+* API authentication credentials
+* Recipient information
+* Shipment information
+* Tracking requests
 
 Only the information required to perform shipping operations is transmitted.
 
-Users should review the Terms of Service and Privacy Policy of the shipping provider they choose to use.
+---
 
-## Developer Information
+## Documentation
 
-The plugin follows the standard WordPress plugin structure and is designed to remain maintainable and extensible.
+Documentation is available on GitHub Pages.
 
-Main directories:
+* Documentation
+* Privacy Policy
+* Terms of Service
+* Support
+* Changelog
+
+https://muratzden.github.io/shippilot-for-woocommerce/
+
+---
+
+## Project Structure
 
 ```text
 assets/
+├── css/
+├── js/
+
+docs/
+
 includes/
-languages/
-templates/
+
+README.md
+readme.txt
+LICENSE
+CHANGELOG.md
+shippilot-for-woocommerce.php
 ```
 
-Future releases will continue improving architecture, performance, and extensibility while maintaining backward compatibility whenever possible.
+---
 
-## Roadmap
+## Development Goals
 
-### Version 1.1
+ShipPilot is designed with a modular architecture to support future expansion while maintaining compatibility with WordPress Coding Standards.
 
-* Improved settings interface
-* Additional shipping options
-* Better error handling
+Planned improvements include:
 
-### Version 1.2
-
-* Complete architecture refactoring
-* Modular service structure
-* Improved code organization
-* Additional carrier modules
-* Enhanced developer hooks
+* Multi-carrier architecture
+* Provider abstraction layer
+* Additional carrier integrations
+* REST API improvements
 * Performance optimizations
+* Developer hooks and filters
+
+---
+
+## Compatibility
+
+* WordPress Coding Standards
+* WooCommerce HPOS
+* WordPress Plugin Check
+* Translation Ready
+* GPL-2.0-or-later
+
+---
 
 ## Contributing
 
-Bug reports, feature requests, and pull requests are welcome.
+Bug reports, feature requests and pull requests are welcome.
 
 Please open an issue before submitting large changes.
 
+---
+
 ## License
 
-This project is licensed under the GNU General Public License v2.0 or later (GPL-2.0-or-later). See the LICENSE file for details.
+Licensed under the GNU General Public License v2.0 or later (GPL-2.0-or-later).
+
+See the LICENSE file for details.
+
+---
 
 ## Author
 
 **Murat Özden**
 
-Repository:
+GitHub Repository
+
 https://github.com/muratzden/shippilot-for-woocommerce
 
-## Support
+Documentation
 
-If you encounter a bug or would like to request a feature, please open an issue in this repository.
+https://muratzden.github.io/shippilot-for-woocommerce/
 
 ---
 
-© Murat Özden. All rights reserved.
+© 2026 Murat Özden. Licensed under GPL-2.0-or-later.
