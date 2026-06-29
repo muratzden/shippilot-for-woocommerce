@@ -4,10 +4,10 @@ ShipPilot for WooCommerce is a WooCommerce shipping integration plugin that enab
 
 ## Documentation
 
-- Privacy Policy
-- Terms of Service
-- Support
-- Changelog
+- [Privacy Policy](privacy-policy.html)
+- [Terms of Service](terms.html)
+- [Support](support.html)
+- [Changelog](changelog.html)
 
 ## Features
 
@@ -21,9 +21,9 @@ ShipPilot for WooCommerce is a WooCommerce shipping integration plugin that enab
 
 ## Resources
 
-- Privacy Policy: ./privacy-policy.md
-- Terms of Service: ./terms.md
-- Support: ./support.md
-- Changelog: ./changelog.md
+- **Privacy Policy:** [View](privacy-policy.html)
+- **Terms of Service:** [View](terms.html)
+- **Support:** [View](support.html)
+- **Changelog:** [View](changelog.html)
 
 Developed by Murat Özden.
